@@ -4,3 +4,35 @@ Song Name: I Want It That Way
  Preview Link: https://api.spotify.com/v1/tracks/6e40mgJiCid5HRAGrbpGA6
 Album Name: The Hits--Chapter One
 ======End Spotify Log Entry======
+======Begin Movie Log Entry======
+Movie title: Batman
+Year released: 1989
+IMDB rating: 7.5
+Rotten Tomatoes rating: 72%
+Country where produced: USA, UK
+Language: English, French, Spanish
+Plot: The Dark Knight of Gotham City begins his war on crime with his first major enemy being the clownishly homicidal Joker.
+Actors: Michael Keaton, Jack Nicholson, Kim Basinger, Robert Wuhl
+======End Movie Log Entry======
+======Begin Spotify Log Entry======
+Artist: Daryl Hall & John Oates
+Song Name: Sara Smile
+ Preview Link: https://api.spotify.com/v1/tracks/1qjrYozGqc7upUgfN776lZ
+Album Name: Daryl Hall & John Oates
+======End Spotify Log Entry======
+======Begin Spotify Log Entry======
+Artist: Backstreet Boys
+Song Name: I Want It That Way
+ Preview Link: https://api.spotify.com/v1/tracks/6e40mgJiCid5HRAGrbpGA6
+Album Name: The Hits--Chapter One
+======End Spotify Log Entry======
+======Begin Movie Log Entry======
+Movie title: The Fast and the Furious
+Year released: 2001
+IMDB rating: 6.8
+Rotten Tomatoes rating: 53%
+Country where produced: USA, Germany
+Language: English, Spanish
+Plot: Los Angeles police officer Brian O'Conner must decide where his loyalty really lies when he becomes enamored with the street racing world he has been sent undercover to destroy.
+Actors: Paul Walker, Vin Diesel, Michelle Rodriguez, Jordana Brewster
+======End Movie Log Entry======

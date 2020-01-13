@@ -29,13 +29,13 @@ function liriRun(appCommand, userSearch) {
         case "do-what-it-says":
             getRandom();
             break;
-            // If appCommand is left blank, return a default message to user
+            // Default message to user
         default:
             console.log("Please enter one of the following commands: 'concert-this', 'spotify-this-song', 'movie-this', 'do-what-it-says' in order to continue");
     }
 };
 
-//----------Function to search Spotify API
+//----- Spotify API
 function getSpotify(songName) {
 
     var spotify = new Spotify(keys.spotify);
@@ -67,7 +67,7 @@ function getSpotify(songName) {
     });
 };
 
-//---------Function to search Bands In Town API
+//---------Bands In Town API
 function getBandsInTown(artist) {
 
     var artist = userSearch;
@@ -86,18 +86,18 @@ function getBandsInTown(artist) {
             fs.appendFile("log.txt", logConcert, function (err) {
                 if (err) throw err;
             });
-            //logResults(response)
+           
         });
 };
 
-//---------Function to search OMDB API
+//---------OMDB API
 function getOMDB(movie) {
 
     if (!movie) {
         movie = "Mr. Nobody";
     }
     var movieQueryUrl = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
-    //console.log(movieQueryUrl);
+   
 
     axios.request(movieQueryUrl).then(
         function (response) {
@@ -111,7 +111,7 @@ function getOMDB(movie) {
             console.log("* Plot: " + response.data.Plot + "\r\n");
             console.log("* Actors: " + response.data.Actors + "\r\n");
 
-            //logResults(response);
+           // Append text into log.txt file
             var logMovie = "======Begin Movie Log Entry======" + "\nMovie title: " + response.data.Title + "\nYear released: " + response.data.Year + "\nIMDB rating: " + response.data.imdbRating + "\nRotten Tomatoes rating: " + response.data.Ratings[1].Value + "\nCountry where produced: " + response.data.Country + "\nLanguage: " + response.data.Language + "\nPlot: " + response.data.Plot + "\nActors: " + response.data.Actors + "\n======End Movie Log Entry======" + "\n";
 
             fs.appendFile("log.txt", logMovie, function (err) {
